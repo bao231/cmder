@@ -2,7 +2,7 @@
 
 Latest release is **[v1.1.3](https://github.com/bliker/cmder/releases/tag/v1.1.3)**
 
-Cmder is a **software package** created out of pure frustration over absence of usable console emulator on Windows. It is based on [ConEmu](https://code.google.com/p/conemu-maximus5/) with *major* config overhaul. Monokai color scheme, amazing [clink](https://code.google.com/p/clink/) and custom prompt layout.
+Cmder is a **software package** created out of pure frustration over absence of usable console emulator on Windows. It is based on [ConEmu](https://code.google.com/p/conemu-maximus5/) with *major* config overhaul. Monokai color scheme, amazing [clink](https://github.com/mridgers/clink) and custom prompt layout.
 
 ![Cmder Screenshot](http://i.imgur.com/g1nNf0I.png)
 
@@ -19,6 +19,20 @@ The main advantage of Cmder is portability. It is designed to be totally self-co
 
 *(There will be a version with installer)*
 
+## Integration
+
+So you've experimented with cmder a little and want to give it a shot in a more permanent home;
+
+### Shortcut to open Cmder in a chosen folder
+
+1. Open a terminal as an Administrator
+1. Navigate to the directory you have placed Cmder
+1. Execute `.\cmder.exe /REGISTER ALL`*
+
+In a file explorer window right click in or on a directory to see "Cmder Here" in the context menu.
+
+*If you get a message "Access Denied" ensure you are executing the command in an Administrator prompt.
+
 ## Keyboard shortcuts
 
 ### Tab manipulation
@@ -26,7 +40,7 @@ The main advantage of Cmder is portability. It is designed to be totally self-co
 * `Ctrl + t` : new tab dialog (maybe you want to open cmd as admin?)
 * `Ctrl + w` : close tab
 * `Ctrl + d` : close tab (if pressed on empty command)
-* `Ctrl + alt + number` : fast new tab: `1` - CMD, `2` - Powershell `*` - More to come
+* `Shift + alt + number` : fast new tab: `1` - CMD, `2` - Powershell `*` - More to come
 * `Alt + enter`: Fullscreen
 
 ### Shell
@@ -49,7 +63,11 @@ All aliases will be saved in `/config/aliases` file
 
 ## Todo
 
-1. Write a Todo list
+1. Complete PowerShell compatibility.
+2. Workaround git.exe overload after msysgit download (Granted this is an upstream issue).
+3. Redo Build/Pack scripts or remove them altogether.
+4. Git Bash
+5. Check for clink and git before injecting them
 
 ## License
 
